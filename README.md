@@ -39,7 +39,7 @@
 
 **Εικόνα 2**: Σχέδιο συνδεσμολογίας micro:bit με τους αισθητήρες
 
-![microbit and sensors](microbit_and_sensors.png)
+![microbit and sensors](microbit_and_2sensors.png)
 
 ## Radio Επικοινωνία μικροελεγκτών micro:bit. Μέτρηση Εμβέλειας
 
