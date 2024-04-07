@@ -72,7 +72,9 @@
 
 **Εικόνα 6**: Περιγραφή των περιστροφών roll και pitch που αντιλαμβάνεται ο αισθητήρας
 
-![microbit rotation](microbit_rotation.png)
+<p align="center">
+  <img  src="microbit_rotation.png">
+</p>
 
 **Εικόνα 7**: Πρόγραμμα “αποστολέας”
 
