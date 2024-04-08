@@ -123,7 +123,36 @@ _**math.pow( (P/Po), (1/5.255) )**_
 
 **Εικόνα 10**: Το πρόγραμμα “παραλήπτης” σε MicroPython
 
-![program receiver](program_receiver_2.png)
+```python
+# Πρόγραμμα "παραλήπτης"
+# 1. Λαμβάνει δεδομένα από το πρόγραμμα "αναμεταδότη"
+# 2. Υπολογίζει το υψόμετρο από την τρέχουσα ατμοσφαιρική πίεση
+# 3. Στέλνει όλα τα δεδομένα στη θύρα USB
+
+from microbit import *
+import math
+import make_radio
+
+# Ατμοσφαιρική πίεση στο επίπεδο της θάλασσας σε (Pa)
+p0=101325
+
+radio = make_radio.MakeRadio(group=5)
+radio.off()
+radio.on()
+
+while True:
+    message=radio.receive_packet()
+    if message:
+        k=message[:4]
+        if k=="Pres":
+            Ps = int(str(message[5:]))
+            Alti = 44330 * (1 - math.pow((Ps/p0),(1/5.255)) )
+            print('Pres:%.2f' %Ps)               
+            print('Alti:%.2f' %Alti)
+        else:
+            print(message)
+```
+
 
 #### WebUSB, σειριακή εγγραφή, oπτικοποίηση και αποθήκευση δεδομένων.
 Το προγραμματιστικό περιβάλλον makecode.microbit.org, υποστηρίζει την τεχνολογία  WebUSB, ένα χαρακτηριστικό των σύγχρονων φυλλομετρητών (όπως Google Chrome, Chromium, Microsoft Edge, Opera, κ.α.) όπου μέσω ιστοσελίδας, ένας browser μπορεί να επικοινωνήσει απευθείας με συσκευές συνδεδεμένες στη θύρα USB. Αυτό πρακτικά δίνει τη δυνατότητα στο micro:bit να διαβάζει και να στέλνει ζωντανά σειριακά δεδομένα, σε  υπολογιστή. Έτσι μέσω του online προγραμματιστικού περιβάλλοντος μπορούν να προβληθούν σε πραγματικό χρόνο δεδομένα και γραφικές παραστάσεις (data logging) (Εικόνα 11).
