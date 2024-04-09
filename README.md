@@ -73,7 +73,7 @@
 **Εικόνα 6**: Σχεδιάγραμμα των περιστροφών roll και pitch που αντιλαμβάνεται ο αισθητήρας accelerometer
 
 <p align="center">
-  <img  src="microbit_rotation.png">
+  <img  src="images/microbit_rotation.png">
 </p>
 
 **Εικόνα 7**: Πρόγραμμα “αποστολέας”
