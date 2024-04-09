@@ -135,7 +135,7 @@ _**math.pow( (P/Po), (1/5.255) )**_
 
 **Εικόνα 11**: Στιγμιότυπο από την ιστοσελίδα makecode.microbit.org με δεδομένα σε πραγματικό χρόνο.
 
-![stigmiotypo](stigmiotypo.gif)
+![stigmiotypo](images/stigmiotypo.gif)
 
 Οι εντολές **serial write value (name) = (value)** στην Εικόνα 9 και **print(message)**  στην Εικόνα 10, στέλνουν τα δεδομένα στη θύρα USB. Με το micro:bit συνδεδεμένο σε αυτή, μπορούμε να πάρουμε πληροφορίες όμοιες με εκείνες της Εικόνας 11, επιλέγοντας στο περιβάλλον makecode.microbit.org, το κουμπί **Show data Device**.
 Στη συνέχεια έχουμε τη δυνατότητα να αποθηκεύσουμε τα δεδομένα μας σε μορφή csv, επιλέγοντας το μπλε κουμπί (Export data) στο πάνω δεξιά μέρος του παραθύρου ![download csv](images/download_csv.png)
