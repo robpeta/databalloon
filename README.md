@@ -92,14 +92,14 @@
 
 **Εικόνα 8**: Πρόγραμμα “αναμεταδότης”
 
-![program retransmitter](program_retransmitter.png)
+![program retransmitter](images/program_retransmitter.png)
 
 #### Τελική λήψη και εγγραφή δεδομένων στη σειριακή θύρα
 Στο τελικό στάδιο της λήψης των δεδομένων, το micro:bit  “παραλήπτης”, ο,τι λαμβάνει το στέλνει μέσω της θύρας USB σε υπολογιστή (Εικόνα 9). 
 
 **Εικόνα 9**: Πρόγραμμα “παραλήπτης”
 
-![program receiver](program_receiver_1.png)
+![program receiver](images/program_receiver_1.png)
 
 **Μετατροπή Βαρομετρικής Πίεσης σε υψόμετρο**
 
